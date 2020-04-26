@@ -7,6 +7,9 @@ public class Circulo_DAM extends FiguraGeometrica_DAM {
 	public Circulo_DAM(double r, String tipoFigura) {
 		super(tipoFigura);
 		radio = r;
+		if (radio<0) {
+			radio=radio*(-1);
+		}
 	}
 
 	@Override
