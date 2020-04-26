@@ -7,6 +7,10 @@ public abstract class FiguraGeometrica_DAM {
 		super();
 		this.tipoFigura = tipoFigura;
 	}
+	
+	public double semiPerimetro() {
+		return this.perimetro() / 2;
+	}
 
 	public abstract double area();
 	
